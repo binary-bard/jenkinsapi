@@ -226,6 +226,7 @@ class Job(JenkinsBase, MutableJenkinsThing):
         )
 
         redirect_url = response.headers["location"]
+        print(redirect_url)
 
         #
         # Enterprise Jenkins implementations such as CloudBees locate their
